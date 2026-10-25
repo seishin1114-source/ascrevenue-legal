@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Revenue for App Store Connect</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19 L9 13 L13 16 L20 7"/><circle cx="20" cy="7" r="2.4"/></svg></div>
+      <div>
+        <div class="brand-name">Revenue for App Store Connect</div>
+        <p class="app">By Miyajin Product</p>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 25 October 2026 · <a href="../privacy.html">日本語</a></p>
+  </header>
+
+  <p>Miyajin Product ("we", "us") sets out below how information is handled in the iOS app "Revenue for App Store Connect" (the "App").</p>
+
+  <div class="note">
+    The App has no server of ours and no account registration. Your App Store Connect API key is stored <strong>only in your device's Keychain</strong>. Sales reports are fetched directly from Apple by your device and stored <strong>only on your device</strong>. We never receive your API key or your sales data.
+  </div>
+
+  <h2>1. Information handled</h2>
+  <ol>
+    <li><strong>App Store Connect API key</strong>: the Issuer ID, Key ID and private key (.p8) you enter, and your Vendor Number. They are used to sign requests to Apple's API and are stored in your device's Keychain (saved as usable on this device only, and not synced with iCloud Keychain).</li>
+    <li><strong>Sales reports</strong>: data fetched from Apple's App Store Connect API (daily summary sales reports) about your own apps, such as daily downloads, redownloads, updates, in-app purchases, estimated proceeds, currencies, countries, app names, SKUs and App Store IDs. They contain no information that identifies your customers.</li>
+    <li><strong>Account identification</strong>: to tell which account the data belongs to, a one-way hash (SHA-256) of your Issuer ID and your Vendor Number are stored on your device.</li>
+    <li><strong>App icon images</strong>: icons of your published apps that appear in your sales reports are stored on your device for display (Section 4).</li>
+    <li><strong>Settings</strong>: display currency, appearance (light or dark), fetch status (whether each day was fetched) and similar settings are stored only on your device.</li>
+    <li><strong>Advertising identifiers, etc.</strong>: to deliver ads, ad providers may collect the IDFA (Identifier for Advertisers) and information about your device and usage (Section 5).</li>
+  </ol>
+  <p>The App does not ask for or collect your name, email address or location.</p>
+
+  <h2>2. Purposes of use</h2>
+  <p>The information is used to (a) fetch, store, show, total and analyze your sales reports (comparisons with the previous period, and breakdowns by country, app and type), (b) make sure data from different accounts is not mixed, (c) fix problems, and (d) deliver, optimize and measure ads.</p>
+
+  <h2>3. Where data is stored</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Information</th><th>Stored in</th></tr></thead>
+    <tbody>
+      <tr><td>API key (Issuer ID, Key ID, private key, Vendor Number)</td><td>Your device's Keychain (this device only)</td></tr>
+      <tr><td>Sales reports, fetch status</td><td>On your device (an area for this App only)</td></tr>
+      <tr><td>Account identification (Issuer ID hash, Vendor Number), settings</td><td>On your device</td></tr>
+      <tr><td>App icon images</td><td>On your device</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Nothing is sent to or stored on our servers. The App does not sync with iCloud, but if device backups (such as iCloud Backup) are turned on, sales data and other data on your device may be included in those backups. (Your API key is saved as usable on this device only, so it is not restored to another device.)</p>
+
+  <h2>4. Information sent outside the device</h2>
+  <p>To provide its features, the App communicates directly from your device with the following companies.</p>
+  <ol>
+    <li><strong>Apple (App Store Connect API)</strong>: to fetch sales reports, the App sends Apple requests signed on your device with your API key (including your Vendor Number and the date). The private key itself is never sent.</li>
+    <li><strong>Apple (iTunes Search API)</strong>: to show app icons, the App sends <strong>only the App Store IDs of published apps and a country code</strong>, and receives the icon images. Your API key and sales data are not sent.</li>
+    <li><strong>Google AdMob</strong>: advertising identifiers and similar information may be sent to deliver ads (Section 5). Your API key and sales data are never sent to ad providers.</li>
+  </ol>
+  <p>While the demo (made-up data) is shown, the App does not make the requests in items 1 and 2. Ads (item 3) are still shown in the demo. We do not sell or provide your information to third parties except as required by law.</p>
+
+  <h2>5. Advertising and tracking (ATT)</h2>
+  <ol>
+    <li>The App shows a Google AdMob banner ad at the bottom of the screens that show real data and in the demo. No ads are shown on the first screen or in the connection guide.</li>
+    <li>If you allow tracking in iOS App Tracking Transparency (ATT), the advertising identifier (IDFA) may be used for personalized ads. If you do not allow it, non-personalized ads are shown and you can still use the App.</li>
+    <li>SKAdNetwork and similar mechanisms may be used to measure ad performance.</li>
+    <li>In the EEA, the UK and other applicable regions, a consent form from Google's User Messaging Platform (UMP) is shown, and no ads are requested until consent is obtained. You can change your choice at any time from "My Page" → the menu at the top right → "Ad Privacy Settings" in the App.</li>
+    <li>Your API key and sales data are never used to deliver ads.</li>
+  </ol>
+
+  <h2>6. Third-party services</h2>
+  <ul>
+    <li>Apple (App Store Connect API, iTunes Search API)</li>
+    <li>Google AdMob (ad delivery) / Google User Messaging Platform (consent management)</li>
+  </ul>
+  <p>Please see each company's privacy policy for how they handle information (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a> / <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> / <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google advertising</a>).</p>
+
+  <h2>7. Retention and deletion</h2>
+  <ol>
+    <li><strong>Disconnecting</strong>: when you disconnect from "My Page" → the menu at the top right, your API key is deleted from the device's Keychain. Sales data already fetched stays on your device and can still be viewed.</li>
+    <li><strong>Connecting a different account</strong>: if you connect again with an API key for a different account, the App asks you first and then deletes the previous account's fetched data from your device.</li>
+    <li><strong>Deleting the App</strong>: sales data, settings and icon images are erased from your device when you delete the App. On the first launch after reinstalling, any API key left in the Keychain is also deleted. We cannot restore erased data. (You can fetch sales reports from Apple again by reconnecting, for the period in which Apple still keeps daily reports.)</li>
+    <li><strong>Revoking the API key</strong>: without using the App, you can revoke your API key at any time in App Store Connect under "Users and Access" → "Integrations". The App can no longer fetch sales reports with a revoked key.</li>
+  </ol>
+
+  <h2>8. Your rights</h2>
+  <p>Depending on the laws where you live (such as the EU and UK General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA)), you may have the right to access, correct, delete or restrict the use of your information. Because we keep no user information on servers, information on your device can be erased by disconnecting or by deleting the App. For information collected by ad providers, use the consent settings above and see each provider's guidance. We do not sell personal information. If you have any questions, please contact us (Section 13).</p>
+
+  <h2>9. International transfers</h2>
+  <p>Through the use of Apple's and Google's services, information may be processed outside Japan.</p>
+
+  <h2>10. Security</h2>
+  <p>We take reasonable measures to prevent the leakage, loss or damage of the information we handle. Your API key is stored in the device's Keychain, and private keys and sales figures are not written to logs. All communication is encrypted (HTTPS).</p>
+
+  <h2>11. Children's privacy</h2>
+  <p>The App is not directed at children under 13.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>We may change this policy as needed. We will announce important changes in the App or by other means.</p>
+
+  <h2>13. Contact</h2>
+  <p>Questions about this policy: <a href="https://docs.google.com/forms/d/e/1FAIpQLSerlqKX8OvohAhMS4iuz7njMA0RL0A8FilcvmtY0oL1UKAetw/viewform" target="_blank" rel="noopener">Contact form</a> (the form is in Japanese; you may write in English)</p>
+
+  <p>This English version is a translation. If there is any difference from the Japanese version, the Japanese version prevails.</p>
+
+  <a class="back" href="index.html">← Back to top</a>
+
+  <footer class="site">© 2026 Miyajin Product</footer>
+</div>
+</body>
+</html>

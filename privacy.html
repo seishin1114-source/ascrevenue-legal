@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜Revenue for App Store Connect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19 L9 13 L13 16 L20 7"/><circle cx="20" cy="7" r="2.4"/></svg></div>
+      <div>
+        <div class="brand-name">Revenue for App Store Connect</div>
+        <p class="app">提供：みやじんプロダクト</p>
+      </div>
+    </div>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日：2026年10月25日 · <a href="en/privacy.html">English</a></p>
+  </header>
+
+  <p>みやじんプロダクト（以下「当社」）は、iOS アプリ「Revenue for App Store Connect」（以下「本アプリ」）における情報の取り扱いについて、以下のとおり定めます。</p>
+
+  <div class="note">
+    本アプリは当社のサーバーを持たず、アカウントの登録もありません。App Store Connect の API キーは<strong>お使いの端末のキーチェーンにだけ</strong>保存し、売上レポートはお使いの端末から Apple へ直接問い合わせて取得し、<strong>端末の中にだけ</strong>保存します。当社が API キーや売上データを受け取ることはありません。
+  </div>
+
+  <h2>1. 取り扱う情報</h2>
+  <ol>
+    <li><strong>App Store Connect の API キー</strong>：ユーザーが入力した Issuer ID・Key ID・秘密鍵（.p8）と、Vendor Number。Apple の API への問い合わせに署名するために使い、端末のキーチェーンに保存します（この端末だけで使える設定で保存し、iCloud キーチェーンには同期しません）。</li>
+    <li><strong>売上レポート</strong>：Apple の App Store Connect API（売上レポート・日次の概要）から取得する、ユーザーご本人のアプリの日ごとのダウンロード数・再ダウンロード数・アップデート数・App 内課金・受取額（推定）・通貨・国・アプリ名・SKU・App Store の ID 等。購入者を特定できる情報は含まれません。</li>
+    <li><strong>アカウントの識別</strong>：どのアカウントのデータかを見分けるため、Issuer ID を元に戻せない形（SHA-256 のハッシュ値）にしたものと Vendor Number を、端末内に保存します。</li>
+    <li><strong>アプリのアイコン画像</strong>：売上レポートに載っている公開中のアプリのアイコン画像を、表示のために端末内に保存します（4 章）。</li>
+    <li><strong>設定情報</strong>：表示通貨、外観（ライト・ダーク）、取得の状態（日ごとに取得できたかどうか）等は端末内にのみ保存します。</li>
+    <li><strong>広告識別子等</strong>：広告配信のため、広告事業者が IDFA（広告識別子）や端末・利用に関する情報を取得する場合があります（5 章）。</li>
+  </ol>
+  <p>本アプリは、氏名・メールアドレス・位置情報の入力や取得を求めません。</p>
+
+  <h2>2. 利用目的</h2>
+  <p>取得した情報は、(a) 売上レポートの取得・保存・表示・集計・分析（前の期間との比較、国別・アプリ別・種類別の内訳など）、(b) 別のアカウントのデータが混ざらないようにするための確認、(c) 不具合の改善、(d) 広告の配信・最適化・効果測定、のために利用します。</p>
+
+  <h2>3. データの保存場所</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>情報</th><th>保存場所</th></tr></thead>
+    <tbody>
+      <tr><td>API キー（Issuer ID・Key ID・秘密鍵・Vendor Number）</td><td>端末のキーチェーン（この端末だけ）</td></tr>
+      <tr><td>売上レポート・取得の状態</td><td>端末内（本アプリ専用の領域）</td></tr>
+      <tr><td>アカウントの識別（Issuer ID のハッシュ値・Vendor Number）・設定情報</td><td>端末内</td></tr>
+      <tr><td>アプリのアイコン画像</td><td>端末内</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>当社のサーバーへの送信・保存は行いません。本アプリは iCloud による同期を行いませんが、端末のバックアップ（iCloud バックアップ等）を有効にしている場合、端末内の売上データ等がバックアップに含まれることがあります（API キーは、この端末だけで使える設定で保存しているため、別の端末へは戻りません）。</p>
+
+  <h2>4. 外部への送信</h2>
+  <p>本アプリは、機能の提供に必要な範囲で、端末から次の事業者へ直接通信します。</p>
+  <ol>
+    <li><strong>Apple（App Store Connect API）</strong>：売上レポートを取得するため、端末で API キーを使って署名した問い合わせ（Vendor Number と日付を含みます）を Apple へ送ります。秘密鍵そのものは送りません。</li>
+    <li><strong>Apple（iTunes の検索 API）</strong>：アプリのアイコン画像を表示するため、公開中のアプリの <strong>App Store の ID と国のコードだけ</strong>を送り、アイコン画像を受け取ります。API キーや売上データは送りません。</li>
+    <li><strong>Google AdMob</strong>：広告配信のため、広告識別子等が送信される場合があります（5 章）。API キーや売上データを広告事業者へ送ることはありません。</li>
+  </ol>
+  <p>デモ（架空のデータ）を表示している間は、上記 1・2 の通信を行いません。広告（3）はデモでも表示します。当社は、法令に基づく場合を除き、取得した情報を第三者へ販売・提供しません。</p>
+
+  <h2>5. 広告・トラッキング（ATT）</h2>
+  <ol>
+    <li>本アプリは、Google AdMob によるバナー広告を、本物のデータとデモの画面の下部に表示します。最初の画面・接続の案内には表示しません。</li>
+    <li>iOS のトラッキング許可（ATT）において許可された場合、パーソナライズ広告のために広告識別子（IDFA）が利用されることがあります。許可しない場合でも、非パーソナライズ広告が表示され、本アプリはご利用いただけます。</li>
+    <li>広告の効果測定のため SKAdNetwork 等の仕組みが利用される場合があります。</li>
+    <li>EEA・英国等の対象地域では、Google の同意管理プラットフォーム（UMP）による同意フォームを表示し、同意が得られるまで広告を要求しません。同意の内容は、本アプリの「マイページ」→ 右上のメニュー →「広告のプライバシー設定」からいつでも変更できます。</li>
+    <li>広告の配信に、API キーや売上データを使うことはありません。</li>
+  </ol>
+
+  <h2>6. 利用する第三者サービス</h2>
+  <ul>
+    <li>Apple（App Store Connect API、iTunes の検索 API）</li>
+    <li>Google AdMob（広告配信）／Google ユーザーメッセージングプラットフォーム（同意管理）</li>
+  </ul>
+  <p>各社の取り扱いについては、それぞれのプライバシーポリシーをご確認ください（<a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a>／<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>／<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 広告ポリシー</a>）。</p>
+
+  <h2>7. データの保持・削除</h2>
+  <ol>
+    <li><strong>接続の解除</strong>：本アプリの「マイページ」→ 右上のメニューから接続を解除すると、端末のキーチェーンから API キーを削除します。取得済みの売上データは端末内に残り、引き続き表示できます。</li>
+    <li><strong>別のアカウントでの接続</strong>：別のアカウントの API キーで接続し直す場合は、確認のうえ、以前のアカウントの取得済みデータを端末から削除します。</li>
+    <li><strong>アプリの削除</strong>：売上データ・設定・アイコン画像は、本アプリの削除により端末から消去されます。本アプリを入れ直した最初の起動では、キーチェーンに残った API キーも削除します。消去したデータを当社が復元することはできません（売上レポートは、再度接続することで Apple から取り直せます。Apple に日次のレポートが残っている期間に限ります）。</li>
+    <li><strong>API キーの無効化</strong>：本アプリを使わずに、App Store Connect の「ユーザとアクセス」→「統合」から、いつでも API キーを無効にできます。無効にした鍵では、本アプリも売上レポートを取得できなくなります。</li>
+  </ol>
+
+  <h2>8. ユーザーの権利</h2>
+  <p>お住まいの地域の法令（EU・英国の一般データ保護規則〈GDPR〉、米国カリフォルニア州の消費者プライバシー法〈CCPA〉等）に基づき、ご自身の情報へのアクセス・訂正・削除・利用停止などを求める権利があります。当社はユーザーの情報をサーバーに保持していないため、端末内の情報は接続の解除や本アプリの削除で消去できます。広告事業者が取得する情報については、上記の同意設定のほか、各事業者の案内をご確認ください。当社は個人情報を販売しません。ご不明な点は 13 章の窓口へお問い合わせください。</p>
+
+  <h2>9. 国外へのデータ移転</h2>
+  <p>Apple・Google の各サービスの利用に伴い、情報が日本国外で処理される場合があります。</p>
+
+  <h2>10. 安全管理措置</h2>
+  <p>当社は、取り扱う情報の漏えい・滅失・毀損の防止のため、合理的な安全管理措置を講じます。API キーは端末のキーチェーンに保存し、秘密鍵・売上の内容を記録（ログ）に残しません。通信はすべて暗号化（HTTPS）して行います。</p>
+
+  <h2>11. 子どものプライバシー</h2>
+  <p>本アプリは13歳未満の方を対象としていません。</p>
+
+  <h2>12. 本ポリシーの変更</h2>
+  <p>当社は、必要に応じて本ポリシーを変更できます。重要な変更は本アプリ等で通知します。</p>
+
+  <h2>13. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせ：<a href="https://docs.google.com/forms/d/e/1FAIpQLSerlqKX8OvohAhMS4iuz7njMA0RL0A8FilcvmtY0oL1UKAetw/viewform" target="_blank" rel="noopener">問い合わせフォーム</a></p>
+
+  <a class="back" href="index.html">← トップに戻る</a>
+
+  <footer class="site">© 2026 みやじんプロダクト</footer>
+</div>
+</body>
+</html>
